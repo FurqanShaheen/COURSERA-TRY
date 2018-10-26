@@ -1,167 +1,60 @@
 
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsive Layout</title>
-<style>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" http-equiv="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-}
-h1 {
-  margin-bottom: 0;
-  text-align:center;
-}
-h2{
-  margin-bottom: 0;
-  text-align:right;
-}
 
-p {
-  border: 1px solid black;
-  background-color: gray;
-  width: auto;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: black;
-  padding: 12px 24px;
+        <title>Module 2 Assigment</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
 
-}
+        <header>
+                <h1><bold>Our Menu</bold></h1>
+        </header>
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
+        <section class="row">
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid black;
-    margin-right: 22px;
-  }
+            <div id="chicken" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <article>
+                    <h2>Chicken</h2>
+                    <p>Pair this entrï¿½e with a simple rice pilaf: Heat 1 tablespoon canola oil in a large saucepan over medium-high heat. Add 1/2 cup chopped onion and 2 teaspoons grated peeled fresh ginger to pan; sautï¿½ 2 minutes. Stir in 1 cup water, 1/2 cup long-grain rice, and 1/4 teaspoon salt; bring to a boil
+                    </p>
+                </article>
+            </div>
 
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 + p{
-    padding: 6px 12px;
-    width: 30%;
-  }
-
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid black;
-    width: 33%;
-  }
-
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12  p{
-    padding: 6px 12px;
-  }
-
-  .gap p{
-    padding: 12px 24px;
-  }
-
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-
-.color1{
-  background-color: lightpink;
-}
-.color2{
-  background-color: hotpink;
-}
-
-.color3{
-  background-color: khaki;
-}
-.gap{
-  position: relative;
-  padding: 30px;
-}
-
-.upper-div{
-  width: auto;
-  font-size: 28px;
-  font-weight: 200;
-  font-style: bolder;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1.5px solid black;
-
-}
-
-</style>
-</head>
-<body>
-<h1>Our Menu</h1>
-
-<div class="row">
-  <div class="col-lg-3 col-md-6 gap">
-    <div class="upper-div color1"><bold>Chicken</bold></div>
-    <p> Pair this entrée with a simple rice pilaf: Heat 1 tablespoon canola oil in a large saucepan over medium-high heat. Add 1/2 cup chopped onion and 2 teaspoons grated peeled fresh ginger to pan; sauté 2 minutes. Stir in 1 cup water, 1/2 cup long-grain rice, and 1/4 teaspoon salt; bring to a boil.</p></div>
-  <div class="col-lg-3 col-md-6 gap">
-<div class="upper-div color2"><bold>Beef</bold></div>
-<p> Turn the pressure cooker into saute mode.
+            <div id="beef" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <article>
+                    <h2>Beef</h2>
+                    <p>
+                        Turn the pressure cooker into saute mode.
 Add oil, chopped onions, garlic, spices, salt and pepper.
 Cook until onions become translucent, for about 3 minutes.
 Then stir in the crushed tomatoes, brown sugar and bring to a boil.
-Pour the mixture into the food processor and blend all into a paste.</p></div>
-<div class="col-lg-3 col-md-6  gap ">
-<div class="upper-div color3"><bold>Sushi</bold></div>
-  <p> 2/3 cup uncooked short-grain white rice.
+Pour the mixture into the food processor and blend all into a paste
+                    </p>
+                </article>
+            </div>
+
+            <div id="sushi" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <article>
+                    <h2>Sushi</h2>
+                    <p>
+  2/3 cup uncooked short-grain white rice.
 3 tablespoons rice vinegar.
 3 tablespoons white sugar.
 1 1/2 teaspoons salt.
 4 sheets nori seaweed sheets.
-chopped onion and 2 teaspoons grated peeled fresh ginger to pan; sauté 2 minutes
-chopped onion and 2 teaspoons grated peeled</p></div>
-  
-</div>
+chopped onion and 2 teaspoons grated peeled fresh ginger to pan; sautï¿½ 2 minutes
+chopped onion and 2 teaspoons grated peeled                  </p>
+                </article>
+            </div>
 
-</body>
+        </section>
+
+    </body>
 </html>
+s
